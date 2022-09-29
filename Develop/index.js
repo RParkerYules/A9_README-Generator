@@ -7,17 +7,17 @@ const generateMarkdown = require('./utils/generateMarkdown')
 // List of question names with questions
 const questions = [{
     type: 'input', 
-    name: 'Project-Title',
+    name: 'title',
     message: 'What is your Project Title?'
 },
 {
     type: 'input', 
-    name: 'GitHub-Username',
+    name: 'GitHubUsername',
     message: 'What is your GitHub Username?'
 },
 {
     type: 'input', 
-    name: 'Email-Address',
+    name: 'EmailAddress',
     message: 'What is your email address?'
 },
 {
@@ -26,17 +26,17 @@ const questions = [{
     message: 'Write a short description for your project.'
 },
 {
-    type: 'input', 
+    type: 'list', 
     name: 'License',
     message: 'What license should your project have?',
     choices: [
-        'Apache license 2.0',
-        'BSD 2-clause "Simplified" license',
-        'BSD 3-clause "New" or "Revised" license',
-        'GNU General Public License family',
-        'GNU Library or "Lesser" General Public License (LGPL)',
         'MIT',
+        'Apache license 2.0',
+        'BSD 2-clause license',
+        'BSD 3-clause license',
+        'Eclipse Public License 1.0', 
         'Mozilla Public License 2.0',
+        'Open Database License (ODbL)',
     ],
     default: "MIT"
 },
@@ -52,7 +52,7 @@ const questions = [{
 },
 {
     type: 'input', 
-    name: 'User Information',
+    name: 'UserInformation',
     message: 'What does the user need to know about using the repo?'
 },
 {
@@ -65,7 +65,7 @@ const questions = [{
 
 // TODO: Create a function to write to the README file
 function writeToFile(fileName, data) {
-    fs.writeToFileSync(fileName, data);
+    fs.writeFileSync(fileName, data);
 }
 
 // TODO: Create a function to initialize app
