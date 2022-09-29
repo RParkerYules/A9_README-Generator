@@ -81,7 +81,7 @@ People who have contributed to this project include:  ${data.Contributors}
 
 # Tutorial
 
-To watch a tutorial go to: [Tutorial](https://drive.google.com/file/d/1LjaQCh3HJhDLVsbCyV528F1Dm_kp9ZFq/view?usp=sharing)
+To watch a tutorial go to: [Tutorial](https://drive.google.com/file/d/1HdPyBqDRDr8vQ2iPUT-QhBLP49w-MUZy/view?usp=sharing)
 
 `;
  
