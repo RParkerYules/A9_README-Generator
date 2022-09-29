@@ -51,7 +51,7 @@ My email address is:  ${data.EmailAddress}
 - [Tests](#tests)
 - [User Information](#user-information)
 - [Contributiors](#contributors)
-- [Tutorial](#Tutorial)
+- [Tutorial](#tutorial)
 
 
 # Description
@@ -81,7 +81,7 @@ People who have contributed to this project include:  ${data.Contributors}
 
 # Tutorial
 
-To watch a tutorial go to: [Tutorial]("https://drive.google.com/file/d/1mNzzr8Boxf7XFG2_-XDP0MTV3F78hW7U/view?usp=sharing")
+To watch a tutorial go to: [Tutorial](https://drive.google.com/file/d/1LjaQCh3HJhDLVsbCyV528F1Dm_kp9ZFq/view?usp=sharing)
 
 `;
  
