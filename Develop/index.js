@@ -3,20 +3,21 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown')
 
-// This is the first question
+
+// List of question names with questions
 const questions = [{
     type: 'input', 
-    name: 'Project Title',
+    name: 'Project-Title',
     message: 'What is your Project Title?'
 },
 {
     type: 'input', 
-    name: 'GitHub Username',
+    name: 'GitHub-Username',
     message: 'What is your GitHub Username?'
 },
 {
     type: 'input', 
-    name: 'Email Address',
+    name: 'Email-Address',
     message: 'What is your email address?'
 },
 {
@@ -26,8 +27,8 @@ const questions = [{
 },
 {
     type: 'input', 
-    name: 'License(s)',
-    message: 'What licenses should your project have?',
+    name: 'License',
+    message: 'What license should your project have?',
     choices: [
         'Apache license 2.0',
         'BSD 2-clause "Simplified" license',
@@ -62,9 +63,9 @@ const questions = [{
 
 ]
 
-// TODO: Create a function to write README file
+// TODO: Create a function to write to the README file
 function writeToFile(fileName, data) {
-    fs.writeFileSync(fileName, data);
+    fs.writeToFileSync(fileName, data);
 }
 
 // TODO: Create a function to initialize app
